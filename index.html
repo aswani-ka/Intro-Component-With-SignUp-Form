@@ -11,7 +11,7 @@
   </head>
   <body class="bg-[url(/images/bg-intro-mobile.png)] sm:bg-[url(/images/bg-intro-desktop.png)] bg-no-repeat bg-cover bg-red-400/90 font-poppins text-[18px]">
     <div>
-      <div class="grid gap-18 sm:flex sm:min-h-screen sm:max-w-[1300px] min-w-[400px] mx-auto justify-center items-center sm:gap-20 sm:p-5 p-10 mt-10 sm:mt-0">
+      <div class="grid gap-18 sm:flex sm:min-h-screen sm:max-w-[1200px] min-w-[400px] mx-auto justify-center items-center sm:gap-20 sm:p-5 p-10 mt-10 sm:mt-0">
         <div class="text-white leading-7 flex flex-col gap-6">
           <h1 class="font-bold sm:text-5xl text-4xl sm:text-left text-center">Learn to code by watching others</h1>
           <p class="sm:text-lg text-[16px] sm:text-left text-center">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
@@ -23,30 +23,30 @@
             <p><span class="text-white font-bold">Try it free 7 days </span>then $20/mo. thereafter</p>
           </div>
 
-          <form action="">
+          <form id="form-validate" novalidate>
             <div class="bg-white rounded-xl p-12 mt-5 text-center text-gray-800 flex flex-col gap-8 font-semibold sm:min-w-[500px] mx-auto text-sm shadow-xl/30">
               <div class="flex flex-col relative">
-                <input type="text" placeholder="First Name" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md flex-1">
-                <img src="/images/icon-error.svg" alt="" class="w-5 h-5 absolute right-3 top-4 hidden">
-                <p class="text-[10px] font-normal text-red-500 italic text-right hidden">First Name cannot be empty</p>
+                <input id="firstname" type="text" placeholder="First Name" class="p-4 border-1 border-gray-300 focus:border-gray-500  outline-none rounded-md flex-1">
+                <img src="/images/icon-error.svg" alt="" id="error-icon1" class="w-5 h-5 absolute right-3 top-4 hidden">
+                <p id="error-first" class="text-[10px] font-normal text-red-500 italic text-right hidden">First Name cannot be empty</p>
               </div>
 
               <div class="flex flex-col relative">
-                <input type="text" placeholder="Last Name" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
-                <img src="/images/icon-error.svg" alt="" class="w-5 h-5 absolute right-3 top-4 hidden">
-                <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Last Name cannot be empty</p>
+                <input id="lastname" type="text" placeholder="Last Name" class="p-4 border-1 border-gray-300 focus:border-gray-500 outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" id="error-icon2" class="w-5 h-5 absolute right-3 top-4 hidden">
+                <p id="error-last" class="text-[10px] font-normal text-red-500 italic text-right hidden">Last Name cannot be empty</p>
               </div>
 
               <div class="flex flex-col relative">
-                <input type="text" placeholder="Email Address" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
-                <img src="/images/icon-error.svg" alt="" class="w-5 h-5 absolute right-3 top-4 hidden">
-                  <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Looks like this is not an email</p>
+                <input id="email" type="text" placeholder="Email Address" class="p-4 border-1 border-gray-300 focus:border-gray-500  outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" id="error-icon3" class="w-5 h-5 absolute right-3 top-4 hidden">
+                  <p id="error-email" class="text-[10px] font-normal text-red-500 italic text-right hidden">Looks like this is not an email</p>
               </div>
 
               <div class="flex flex-col relative">
-                <input type="text" placeholder="Password" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
-                <img src="/images/icon-error.svg" alt="" class="w-5 h-5 absolute right-3 top-4 hidden">
-                  <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Password Name cannot be empty</p>
+                <input id="password" type="text" placeholder="Password" class="p-4 border-1 border-gray-300 focus:border-gray-500  outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" id="error-icon4" class="w-5 h-5 absolute right-3 top-4 hidden">
+                  <p id="error-pwd" class="text-[10px] font-normal text-red-500 italic text-right hidden">Password Name cannot be empty</p>
               </div>
 
               <button class="bg-green-400/90 text-white rounded-md p-4 cursor-pointer hover:bg-green-300/90 shadow-xl/20">CLAIM YOUR FREE TRIAL</button>
