@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    
+  </head>
+  <body class="bg-[url(/images/bg-intro-desktop.png)] bg-no-repeat bg-cover bg-red-400/90 font-poppins text-[18px]">
+    <div>
+      <div class="flex min-h-screen max-w-[1300px] mx-auto justify-center items-center gap-20 p-5">
+        <div class="text-white leading-7 flex flex-col gap-6">
+          <h1 class="font-bold text-5xl">Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+        </div>
+
+        <div>
+          <div class="bg-indigo-800/80 rounded-xl p-4 text-center text-gray-300 shadow-xl/20">
+            <p><span class="text-white font-bold">Try it free 7 days</span> $20/mo. thereafter</p>
+          </div>
+
+          <form action="">
+            <div class="bg-white rounded-xl p-12 mt-5 text-center text-gray-800 flex flex-col gap-8 font-semibold min-w-[500px] text-sm ">
+              <div class="flex flex-col relative">
+                <input type="text" placeholder="First Name" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md flex-1">
+                <img src="/images/icon-error.svg" alt="" class="w-6 h-6 absolute right-3 top-4 hidden">
+                <p class="text-[10px] font-normal text-red-500 italic text-right hidden">First Name cannot be empty</p>
+              </div>
+
+              <div class="flex flex-col relative">
+                <input type="text" placeholder="Last Name" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" class="w-6 h-6 absolute right-3 top-4 hidden">
+                <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Last Name cannot be empty</p>
+              </div>
+
+              <div class="flex flex-col relative">
+                <input type="text" placeholder="Email Address" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" class="w-6 h-6 absolute right-3 top-4 hidden">
+                  <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Looks like this is not an email</p>
+              </div>
+
+              <div class="flex flex-col relative">
+                <input type="text" placeholder="Password" class="p-4 border-white border-t-gray-300 border-1 focus:border-gray-700 outline-none rounded-md">
+                <img src="/images/icon-error.svg" alt="" class="w-6 h-6 absolute right-3 top-4 hidden">
+                  <p class="text-[10px] font-normal text-red-500 italic text-right hidden">Password Name cannot be empty</p>
+              </div>
+
+              <button class="bg-green-400/90 text-white rounded-md p-4 cursor-pointer hover:bg-green-300/90 shadow-xl/20">CLAIM YOUR FREE TRIAL</button>
+
+              <p class="text-xs text-gray-400">By clicking the button, you are agreeing to our <span class="text-red-500">Terms and Services</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
