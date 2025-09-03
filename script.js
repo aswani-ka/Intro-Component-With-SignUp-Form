@@ -66,4 +66,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    firstName.addEventListener("input", () => {
+        if(firstName.value.trim()) {
+            errorImg1.classList.add("hidden");
+            errorFirstname.classList.add("hidden");
+            firstName.classList.remove("border-red-400");
+        }
+    });
+
+    lastName.addEventListener("input", () => {
+        if(lastName.value.trim()) {
+            errorImg2.classList.add("hidden");
+            errorLastname.classList.add("hidden");
+            lastName.classList.remove("border-red-400");
+        }
+    });
+
+    userPassword.addEventListener("input", () => {
+        if(userPassword.value.trim()) {
+            errorImg4.classList.add("hidden");
+            errorPassword.classList.add("hidden");
+            userPassword.classList.remove("border-red-400");
+        }
+    });
+
+    emailInp.addEventListener("input", () => {
+
+        if(emailPattern.test(emailInp.value.trim())) {
+            errorImg3.classList.add("hidden");
+            errorEmail.classList.add("hidden");
+            emailInp.classList.remove("text-red-400");
+            emailInp.classList.remove("border-red-400");
+        }
+        else {
+            emailInp.classList.add("border-red-400");
+        }
+    });
+
 });
