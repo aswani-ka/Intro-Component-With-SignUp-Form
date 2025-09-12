@@ -8,14 +8,14 @@ This project focuses on responsive design, form validation, and accessibility.
 
 ## Features
 
- - Responsive Layout – Optimized for mobile, tablet, and desktop screens.
+📱 Responsive Layout – Optimized for mobile, tablet, and desktop screens.
 
- - Hover States – Interactive hover effects for buttons and input fields.
+🎨 Hover States – Interactive hover effects for buttons and input fields.
 
- - Form Validation
+✅ Form Validation
 
-  -> Shows error message when a field is left empty → "[Field Name] cannot be empty".
+  - Shows error message when a field is left empty → "[Field Name] cannot be empty".
 
-  -> Shows error message for invalid email → "Looks like this is not an email".
+  - Shows error message for invalid email → "Looks like this is not an email".
 
- - Accessible – Semantic markup and screen-reader friendly error handling.
+🦻 Accessible – Semantic markup and screen-reader friendly error handling.
